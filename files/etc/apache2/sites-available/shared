@@ -1,0 +1,10 @@
+Alias /shared /vagrant/shared
+
+<Directory /vagrant/shared>
+	Options Indexes FollowSymLinks ExecCGI
+	AddHandler cgi-script .cgi
+	AllowOverride All
+	Order allow,deny
+	allow from all
+</Directory>
+
