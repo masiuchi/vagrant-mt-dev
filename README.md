@@ -19,6 +19,7 @@ Vagrantfile for running/developing MT
 * Memcached 1.4.13
 * Perl 5.14.2
   * App::cpm
+  * Cache::File
   * Image::Magick 6.6.9
   * CPAN modules in cpanfile of MT develop branch
 * PHP 5.3.10
