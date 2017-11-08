@@ -74,6 +74,9 @@ cp -rf /vagrant/files/* /
 a2ensite shared
 service apache2 reload
 
+# /var/www/ owner and group
+chown -R vagrant:vagrant /var/www
+
 # test database
 mysql -e "create database if not exists mt_test character set utf8"
 mysql -e "grant all privileges on mt_test.* to mt@localhost"
