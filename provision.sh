@@ -74,8 +74,9 @@ cp -rf /vagrant/files/* /
 a2ensite shared
 service apache2 reload
 
-# /var/www/ owner and group
+# permission change
 chown -R vagrant:vagrant /var/www
+chgrp vagrant /etc/phpmyadmin/config-db.php
 
 # test database
 mysql -e "create database if not exists mt_test character set utf8"
