@@ -71,8 +71,7 @@ DEBIAN_FRONTEND=nointeractive\
 cp -rf /vagrant/files/* /
 
 # shared directory settings
-a2ensite shared
-service apache2 reload
+ln -s /vagrant/shared /var/www
 
 # permission change
 chown -R vagrant:vagrant /var/www
