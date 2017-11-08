@@ -35,3 +35,22 @@ Vagrantfile for running/developing MT
   * Yarn
 * git 1.7.9.5
 
+## Site map
+* http://mt-dev.test
+  * /var/www
+  * Both CGI(Perl) and PHP work
+* http://mt-dev.test/shared
+  * /var/www/shared
+  * Symbolic link of /vagrant/shared
+  * Both CGI(Perl) and PHP work
+* http://mt-dev.test/phpmyadmin
+  * phpMyAdmin
+
+## Directory map
+* /vagrant
+  * Synced Folder by Vagrant
+* /vagrant/shared
+  * Symbolic linked to /var/www/shared
+* /var/www
+  * Site root of httpd
+
