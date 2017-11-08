@@ -1,6 +1,6 @@
 #!/bin/sh
 
-CPM_WORKERS=1
+CPM_WORKERS=5
 
 set -eu
 
