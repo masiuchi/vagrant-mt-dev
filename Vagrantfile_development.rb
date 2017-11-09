@@ -1,14 +1,10 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-if ENV['MT_DEV']
-  require "./Vagrantfile_#{ENV['MT_DEV']}.rb"
-  exit
-end
-
 Vagrant.configure("2") do |config|
-  config.vm.box = "masahiroiuchi/mt-dev"
+  config.vm.box = "ubuntu/precise64"
   config.vm.hostname = "mt-dev.test"
+  config.vm.provision "shell", path: "provision.sh"
   config.vm.network "private_network", type: "dhcp"
 
   config.hostmanager.enabled = true
