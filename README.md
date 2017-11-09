@@ -12,7 +12,7 @@ Vagrantfile for running/developing MT
 * Vagrant
   * vagrant-hostmanager
 
-## Usage
+## Usage of Vagrant Box
 ```bash
 $ wget https://raw.githubusercontent.com/masiuchi/vagrant-mt-dev/master/Vagrantfile
 $ vagrant up
