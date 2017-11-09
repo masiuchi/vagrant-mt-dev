@@ -12,6 +12,13 @@ Vagrantfile for running/developing MT
 * Vagrant
   * vagrant-hostmanager
 
+## Usage
+```bash
+$ wget https://raw.githubusercontent.com/masiuchi/vagrant-mt-dev/master/Vagrantfile
+$ vagrant up
+$ open http://mt-dev.test
+```
+
 ## Environments
 * Ubuntu 12.04.5 LTS
 * Apache HTTP Server 2.2.22
