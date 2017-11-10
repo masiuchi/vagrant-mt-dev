@@ -15,6 +15,7 @@ Vagrantfile for running/developing MT
 ## Usage of Vagrant Box
 ```bash
 $ wget https://raw.githubusercontent.com/masiuchi/vagrant-mt-dev/master/Vagrantfile
+$ vagrant plugin install vagrant-hostmanager
 $ vagrant up
 $ open http://mt-dev.test
 ```
