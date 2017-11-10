@@ -1,13 +1,13 @@
 # vagrant-mt-dev
 Vagrantfile for building environment that can run/develop MT.
 
-### Vagrant Box built by this Vagrantfile
+## Vagrant Box built by this Vagrantfile
 * Name
   * masahiroiuchi/mt-dev
 * Page on Vagrant Cloud
   * [https://app.vagrantup.com/masahiroiuchi/boxes/mt-dev]()
 
-# What you can do on this Vagrant Box
+## What you can do on this Vagrant Box
 * To run MT
 * To run MT in shared directory
 * To use dynamic publishing
