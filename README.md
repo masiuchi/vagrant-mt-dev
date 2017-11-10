@@ -1,18 +1,32 @@
 # vagrant-mt-dev
-Vagrantfile for running/developing MT
+Vagrantfile for building environment that can run/develop MT.
 
-* Can run MT
-* Can execute MT tests
-* Can build MT
-* Can build Riot.js files
-* Can build a-table.js
+### Vagrant Box built by this Vagrantfile
+* Name
+  * masahiroiuchi/mt-dev
+* Page on Vagrant Cloud
+  * [https://app.vagrantup.com/masahiroiuchi/boxes/mt-dev]()
 
-## Requirements
+# What you can do on this Vagrant Box
+* To run MT
+* To run MT in shared directory
+* To use dynamic publishing
+* To use 4 image drivers
+  * GD
+  * ImageMagick
+  * Imager
+  * NetPBM
+* To run MT tests
+* To build MT
+* To build Riot.js files
+* To build a-table.js
+
+## Requirements to use this Vagrant Box
 * VirtualBox
 * Vagrant
   * vagrant-hostmanager
 
-## Usage of Vagrant Box
+## Usage of this Vagrant Box
 ```bash
 $ wget https://raw.githubusercontent.com/masiuchi/vagrant-mt-dev/master/Vagrantfile
 $ vagrant plugin install vagrant-hostmanager
@@ -20,9 +34,12 @@ $ vagrant up
 $ open http://mt-dev.test
 ```
 
-## Environments
+## Information of this Vagrant Box in detail
+
+### Intalled softwares
 * Ubuntu 12.04.5 LTS
 * Apache HTTP Server 2.2.22
+  * Both user and group of this process are "vagrant" to manipulate file/directory in /vagrant directory.
 * MySQL 5.5.54
 * Memcached 1.4.13
 * Perl 5.14.2
@@ -43,7 +60,7 @@ $ open http://mt-dev.test
   * Yarn
 * git 1.7.9.5
 
-## Site map
+### Site map
 * http://mt-dev.test
   * /var/www
   * Both CGI(Perl) and PHP work
@@ -54,7 +71,7 @@ $ open http://mt-dev.test
 * http://mt-dev.test/phpmyadmin
   * phpMyAdmin
 
-## Directory map
+### Directory map
 * /vagrant
   * Synced Folder by Vagrant
 * /vagrant/shared
