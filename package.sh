@@ -1,12 +1,17 @@
 #!/bin/sh
-set -eu
+
+set -u
 
 rm -f package.box
 vagrant destroy -f
 
-MT_DEV=build vagrant up
-MT_DEV=package vagrant reload
-vagrant halt
+# set -e
 
-MT_DEV=package vagrant package
+export MT_DEV="build"
+vagrant up
+
+export MT_DEV="package"
+vagrant reload
+vagrant halt
+vagrant package
 
