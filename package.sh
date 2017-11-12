@@ -5,7 +5,7 @@ set -u
 rm -f package.box
 vagrant destroy -f
 
-# set -e
+set -e
 
 export MT_DEV="build"
 vagrant up
