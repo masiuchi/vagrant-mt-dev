@@ -47,6 +47,7 @@ $ open http://mt-dev.test
   * Cache::File
   * Image::Magick 6.6.9
   * CPAN modules in cpanfile of MT develop branch
+  * Pod::Perldoc 3.15_04
 * PHP 5.3.10
   * mysql module
   * mysqli module
