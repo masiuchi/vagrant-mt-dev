@@ -90,7 +90,7 @@ fi
 
 # tools
 apt-get -y --no-install-recommends install\
- git
+ git perl-doc
 
 # clean up
 apt-get clean
