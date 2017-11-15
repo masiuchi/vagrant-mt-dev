@@ -71,7 +71,9 @@ DEBIAN_FRONTEND=nointeractive\
 cp -rf /vagrant/files/* /
 
 # shared directory settings
-ln -s /vagrant/shared /var/www
+if [ ! -L /var/www/shared ]; then
+  ln -s /vagrant/shared /var/www
+fi
 
 # permission change
 chown -R vagrant:vagrant /var/www
