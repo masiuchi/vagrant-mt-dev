@@ -92,7 +92,12 @@ fi
 
 # tools
 apt-get -y --no-install-recommends install\
- git perl-doc
+  perl-doc
+
+add-apt-repository ppa:git-core/ppa
+apt-get update
+apt-get -y --no-install-recommends install\
+  git
 
 # clean up
 apt-get clean
