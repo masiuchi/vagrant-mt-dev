@@ -6,6 +6,9 @@ def configure_default
     config.vm.box = "masahiroiuchi/mt-dev"
     config.vm.hostname = "mt-dev.test"
     config.vm.network "private_network", type: "dhcp"
+    if File.exists?("provision.sh")
+      config.vm.provision "shell", path: "provision.sh"
+    end
 
     config.hostmanager.enabled = true
     config.hostmanager.manage_host = true
